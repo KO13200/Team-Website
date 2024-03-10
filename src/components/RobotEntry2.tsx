@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-import styles from "../styles/_robotentry2.module.scss";
+import styles from "../styles/_robotentry.module.scss";
 
-const RobotEntry: React.FC = (props) => {
+const RobotEntry: React.FC = () => {
   const [hoveredRobot, setHoveredRobot] = useState<string | null>(null);
 
   const handleMouseEnter = (content: string) => {
@@ -14,9 +14,9 @@ const RobotEntry: React.FC = (props) => {
   };
 
   return (
-    <div className={styles.robotEntry} onMouseEnter={() => handleMouseEnter(props.desc2)} onMouseLeave={handleMouseLeave}>
+    <div className={styles.robotEntry} onMouseEnter={() => handleMouseEnter("Our 2020 robot : WIP")} onMouseLeave={handleMouseLeave}>
       <div className={styles.imageContainer}>
-        <Image src='/5663_2019.jpg' alt="i hate this" width={600} height={336} />
+        <Image src='/2020_render.png' alt="i hate this" width={600} height={336} />
       </div>
       {hoveredRobot && (
         <div className={styles.tooltip}>

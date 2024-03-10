@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import styles from "../styles/_robotentry.module.scss";
 
-const RobotEntry: React.FC = (props) => {
+const RobotEntry: React.FC = () => {
   const [hoveredRobot, setHoveredRobot] = useState<string | null>(null);
 
   const handleMouseEnter = (content: string) => {
@@ -14,7 +14,7 @@ const RobotEntry: React.FC = (props) => {
   };
 
   return (
-    <div className={styles.robotEntry} onMouseEnter={() => handleMouseEnter(props.desc)} onMouseLeave={handleMouseLeave}>
+    <div className={styles.robotEntry} onMouseEnter={() => handleMouseEnter("Our 2019 robots KillSwitch and Seg fault: Designed to be capable of scoring cargo quickly with a small hatch panel 'flooper' this robot has been described as a cargo beast FCompeted at: South Pacific Regional - Lost in Semi Finals")} onMouseLeave={handleMouseLeave}>
       <div className={styles.imageContainer}>
         <Image src='/5663_2019.jpg' alt="i hate this" width={600} height={336} />
       </div>
