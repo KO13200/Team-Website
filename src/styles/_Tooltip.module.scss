@@ -1,0 +1,23 @@
+.tooltip {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ec008c;
+  padding: 10px;
+  border: 1px solid darken(#ec008c, 10%);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  max-width: 1900px;
+  text-align: left;
+
+  p {
+    color: #fff;
+    margin: 0;
+  }
+}
+
+.robotContainer:hover .tooltip {
+  display: block;
+}
