@@ -1,5 +1,56 @@
-/* Forwards */
 @forward './colors.module';
 @forward './fonts.module';
 @forward './general.module';
 @forward './navbar.module';
+
+.robotEntry {
+  position: relative;
+  display: inline-block;
+}
+
+.robotEntry2 {
+  position: relative;
+  display: inline-block;
+}
+
+.imageContainer {
+  position: relative;
+  width: 600px;
+  height: 336px;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tooltipContent {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  overflow: auto;
+  max-width: 90vw;
+  width: max-content;
+}
+
+.robotEntry:hover .tooltip {
+  opacity: 1;
+}
+
+.robotEntry .tooltip {
+  opacity: 0;
+}
+
+.robotEntry:hover .tooltip {
+  opacity: 1;
+}
+
+.robotEntry .tooltip {
+  transition: opacity 1s ease;
+}

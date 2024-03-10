@@ -1,0 +1,47 @@
+.robotEntry2 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .imageContainer {
+    position: relative;
+    width: 600px;
+    height: 336px;
+  }
+  
+  .tooltip {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .tooltipContent {
+    background-color: rgb(236, 0, 142);
+    color: rgb(255, 217, 0);
+    padding: 10px;
+    border-radius: 5px;
+    overflow: auto;
+    max-width: 90vw;
+    width: max-content;
+  }
+  
+  .robotEntry :hover .tooltip {
+    opacity: 1;
+  }
+  
+  .robotEntry .tooltip {
+    opacity: 0;
+  }
+  
+  .robotEntry :hover .tooltip {
+    opacity: 1;
+  }
+  
+  .robotEntry .tooltip {
+    transition: opacity 1s ease;
+  }
+  
