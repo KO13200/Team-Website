@@ -16,7 +16,7 @@ const RobotEntry: React.FC = () => {
   return (
     <div className={styles.robotEntry} onMouseEnter={() => handleMouseEnter("Our 2023 robot Overkill:blah blah blah")} onMouseLeave={handleMouseLeave}>
       <div className={styles.imageContainer}>
-        <Image src='/robot2023.jpg' alt="i hate this" width={600} height={336} />
+        <Image src='/Full_Robot_Cad.png' alt="i hate this" width={600} height={336} />
       </div>
       {hoveredRobot && (
         <div className={styles.tooltip}>
